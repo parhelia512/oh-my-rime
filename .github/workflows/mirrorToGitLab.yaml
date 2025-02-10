@@ -22,3 +22,4 @@ jobs:
           REMOTE: ${{ env.DEPLOY_REPO }}
           GIT_SSH_PRIVATE_KEY: ${{ env.SSH_KEY }}
           GIT_SSH_NO_VERIFY_HOST: "true"
+          ARGS: "--mirror"  # 使用原生镜像推送模式
